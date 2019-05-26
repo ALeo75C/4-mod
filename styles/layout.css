@@ -1,0 +1,247 @@
+body {
+  overflow-x: hidden;
+
+  transition: all 0.3ms ease;
+
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+header {
+  height: 100vh;
+}
+header * {
+  margin: 0 auto;
+}
+
+.h {
+  width: 600px;
+  padding-top: 200px;
+}
+h1 {
+  font-size: 72px;
+}
+h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+nav {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+
+  width: 100vw;
+
+  background-color: rgba(254, 144, 0, 0.5);
+
+  font-size: 14px;
+}
+nav ul {
+  display: flex;
+
+  padding: 40px 100px;
+
+  justify-content: space-around;
+}
+nav a:hover {
+  font-weight: 700;
+}
+
+article h2 {
+  margin-bottom: 55px;
+}
+p {
+  width: 500px;
+  margin-bottom: 35px;
+
+  font-size: 26px;
+}
+
+a {
+  transition: all 0.3s ease;
+  text-decoration: none;
+
+  color: black;
+}
+a:checked {
+  text-decoration: none;
+
+  color: inherit;
+}
+main {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 1200px;
+  margin: -460px auto 120px;
+
+  align-items: center;
+}
+article {
+  position: relative;
+
+  display: flex;
+
+  height: 70vh;
+  padding-top: 100px;
+}
+article:nth-of-type(2n) {
+  align-self: flex-start;
+}
+article:nth-of-type(3n) {
+  align-self: flex-end;
+}
+article:nth-of-type(2n) img {
+  right: -45vw;
+
+  width: 40vw;
+  height: 30vw;
+}
+article:nth-of-type(3n) img {
+  left: -45vw;
+
+  width: 40vw;
+  height: 30vw;
+}
+article a {
+  color: #FE9000;
+
+  font-size: 26px;
+  font-weight: 300;
+}
+article a:hover {
+  text-decoration: underline;
+
+  font-weight: 700;
+}
+article img {
+  position: absolute;
+  z-index: -2;
+}
+.photo {
+  position: absolute;
+  z-index: -1;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.nul {
+  margin: 0;
+  padding: 0;
+}
+.about_me .photo {
+  top: 80px;
+  right: -40vw;
+
+  width: 30vw;
+  height: 73vh;
+
+  background-image: url("../materials/my_photo.jpg");
+}
+.about_hse .photo {
+  left: -45vw;
+
+  width: 39vw;
+  height: 49vh;
+
+  transform: rotate(5deg);
+
+  background-image: url("../materials/grupp.jpg");
+}
+.idea img {
+  right: -45vw;
+
+  width: 40vw;
+  height: 30vw;
+}
+.mfs .photo {
+  top: 85px;
+  right: -32vw;
+
+  width: 30vw;
+  height: 70vh;
+
+  background-image: url("../materials/prez2.jpg");
+  background-position: bottom;
+}
+.mfs .second {
+  top: 97px;
+  left: -29vw;
+
+  width: 25vw;
+  height: 70vh;
+
+  background-image: url("../materials/graf.jpg");
+}
+.posters .photo {
+  top: 40px;
+  right: -45vw;
+
+  width: 40vw;
+  height: 75vh;
+
+  background-image: url("../materials/poster1.jpg");
+}
+.posters .second {
+  left: -45vw;
+
+  background-image: url("../materials/poster2.jpg");
+}
+.web_poster .photo {
+  right: -45vw;
+
+  width: 25vw;
+  height: 74vh;
+
+  background-image: url("../materials/web.jpg");
+  background-position: top;
+}
+.modeling .photo {
+  top: 50px;
+  left: -50vw;
+
+  width: 30vw;
+  height: 60vh;
+
+  background-image: url("../materials/3d.jpg");
+}
+.modeling .second {
+  top: 190px;
+  left: -33vw;
+
+  width: 25vw;
+  height: 60vh;
+
+  background-image: url("../materials/3d2.jpg");
+}
+
+footer {
+  padding: 50px 100px;
+
+  background-color: #FE9000;
+
+  font-size: 22px;
+}
+.information {
+  margin-top: 25px;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+.down {
+  display: flex;
+
+  width: 90vw;
+  width: 100%;
+  margin-top: 46px;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  justify-content: space-between;
+}
