@@ -212,14 +212,10 @@ article img {
 
   background-image: url("../materials/poster2.jpg");
 }
-.web_poster .photo {
-  right: -45vw;
-
-  width: 25vw;
-  height: 74vh;
-
-  background-image: url("../materials/web.jpg");
-  background-position: top;
+.web_poster iframe {
+  width: 716px;
+  height: 474px;
+  margin-left: 78px;
 }
 .modeling .photo {
   top: 50px;
@@ -238,6 +234,15 @@ article img {
   height: 60vh;
 
   background-image: url("../materials/3d2.jpg");
+}
+.animate_poster iframe {
+  width: 360px;
+  height: 550px;
+  margin-right: 100px;
+}
+article.animate_poster iframe:last-of-type {
+  width: 320px;
+  margin-left: 100px;
 }
 
 footer {
