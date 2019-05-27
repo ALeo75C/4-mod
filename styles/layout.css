@@ -36,9 +36,6 @@ h2 {
   font-size: 42px;
   font-weight: 700;
 }
-.divs div {
-  /* animation: jump 10s linear infinite; */
-}
 
 nav {
   position: fixed;
@@ -92,7 +89,7 @@ main {
   display: flex;
   flex-direction: column;
 
-  width: 1200px;
+  width: 75vw;
   margin: -460px auto 120px;
 
   align-items: center;
@@ -197,6 +194,9 @@ article img {
   height: 70vh;
 
   background-image: url("../materials/graf.jpg");
+}
+.diary iframe:last-of-type {
+  display: none;
 }
 .posters .photo {
   top: 40px;

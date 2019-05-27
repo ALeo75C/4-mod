@@ -1,0 +1,78 @@
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .h h1 {
+    font-size: 24px;
+  }
+  main {
+    margin-top: -20vw;
+  }
+  article, article:nth-of-type(2n), article:nth-of-type(3n) {
+    flex-direction: column;
+
+    height: auto;
+
+    align-self: center;
+  }
+  article img {
+    position: static;
+
+    width: 80vw;
+    margin-top: 50px;
+  }
+
+  .photo {
+    position: static;
+
+    margin-top: 50px;
+  }
+  .about_me .photo, .mfs .photo {
+    width: 80vw;
+    height: 50vw;
+
+    background-position: top;
+  }
+  .about_hse .photo {
+    width: 80vw;
+
+    transform: none;
+  }
+  article:nth-last-of-type(2n) img {
+    width: 80vw;
+    height: 57vw;
+  }
+  .second {
+    display: none;
+  }
+  .diary iframe:first-of-type {
+    display: none;
+  }
+  .diary iframe:last-of-type {
+    display: block;
+
+    width: 533px;
+    height: 491px;
+    margin-top: 50px;
+  }
+  .posters .photo {
+    width: 80vw;
+    height: 50vw;
+    margin-top: 50px;
+
+    background-position: bottom;
+  }
+  .web_poster iframe {
+    width: 320px;
+    margin: 50px auto 0;
+  }
+  .modeling .photo {
+    width: 80vw;
+    height: 50vw;
+    margin-top: 50px;
+  }
+  .animate_poster iframe {
+    width: 320px;
+    margin-top: 50px;
+  }
+}
