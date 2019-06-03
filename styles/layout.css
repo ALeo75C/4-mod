@@ -1,7 +1,7 @@
 body {
   overflow-x: hidden;
 
-  transition: all 1s ease;
+  transition: background 1s ease;
 
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -19,22 +19,27 @@ header p {
 .h {
   position: relative;
 
-  width: 600px;
-  padding-top: 220px;
+  width: 867px;
+  margin: 0 auto;
+  padding-top: 250px;
 }
 .h h2 {
   position: absolute;
-  top: 178px;
-  left: 6px;
+  top: 210px;
+  left: 9px;
 
   font-weight: 200;
 }
 h1 {
-  font-size: 107px;
+  font-size: 147px;
+  font-weight: 700;
 }
 h2 {
   font-size: 42px;
   font-weight: 700;
+}
+header p {
+  width: 845px;
 }
 
 .bot {
@@ -49,19 +54,52 @@ nav {
   width: 100vw;
 
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0.4px 0.4px 20px rgba(254, 144, 0, 0.5);
+  box-shadow: 0.4px 0.4px 20px rgba(170, 250, 200, 0.5);
 
   font-size: 14px;
 }
 nav ul {
   display: flex;
 
-  padding: 20px 100px;
+  width: 215px;
+  margin: 0 auto;
+  padding: 20px ;
 
-  justify-content: space-around;
+  cursor: pointer;
+
+  justify-content: space-between;
 }
-nav a:hover {
+nav ul li {
+  display: flex;
+
+  justify-content: center;
+}
+nav li:hover {
   font-weight: 700;
+}
+nav ul ul {
+  position: absolute;
+  z-index: 5;
+
+  display: none;
+
+  margin-top: 20px;
+
+  transition: all 0.5s ease;
+
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0.4px 0.4px 20px rgba(170, 250, 200, 0.5);
+}
+nav li:hover ul {
+  display: block;
+  /* height: 20px; */
+
+}
+nav ul ul li {
+  height: 20px;
+  padding-top: 10px;
+
+  font-weight: 500;
 }
 
 article h2 {
@@ -69,14 +107,14 @@ article h2 {
 }
 p {
   width: 500px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 
-  font-size: 26px;
+  font-size: 23px;
   line-height: 1.2;
 }
 
 a {
-  transition: all 0.3s ease;
+  cursor: pointer;
   text-decoration: none;
 
   color: black;
@@ -93,7 +131,7 @@ main {
   flex-direction: column;
 
   width: 75vw;
-  margin: -460px auto 120px;
+  margin: 0 auto 120px;
 
   align-items: center;
 }
@@ -102,8 +140,13 @@ article {
 
   display: flex;
 
-  height: 70vh;
+  height: 600px;
   padding-top: 100px;
+}
+article:first-of-type {
+  height: 0;
+  margin: 0;
+  padding: 0;
 }
 article:nth-of-type(2n) {
   align-self: flex-start;
@@ -124,14 +167,16 @@ article:nth-of-type(3n) img {
   height: 30vw;
 }
 article a {
+  transition: all 0.3s ease;
+
   color: #000;
-  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 
   font-size: 26px;
-  font-weight: 200;
+  font-weight: 700;
 }
 article a:hover {
-  border-top: 3px solid #000;
+  border-bottom: 5px solid #000;
 
   font-weight: 700;
 }
@@ -162,16 +207,19 @@ article img {
   height: 73vh;
 
   background-image: url("../materials/my_photo.jpg");
+  background-size: cover;
 }
 .about_hse .photo {
+  top: 70px;
   left: -45vw;
 
   width: 39vw;
-  height: 49vh;
+  height: 69vh;
 
   transform: rotate(5deg);
 
-  background-image: url("../materials/grupp.jpg");
+  background-image: url("../materials/grupp.png");
+  background-size: contain;
 }
 .idea img {
   right: -45vw;
@@ -186,17 +234,22 @@ article img {
   width: 30vw;
   height: 70vh;
 
-  background-image: url("../materials/prez2.jpg");
-  background-position: bottom;
+  background-image: url("../materials/prez.jpg");
+  background-position: center;
 }
 .mfs .second {
   top: 97px;
-  left: -29vw;
+  left: -31vw;
 
-  width: 25vw;
+  width: 28vw;
   height: 70vh;
 
   background-image: url("../materials/graf.jpg");
+}
+.diary iframe {
+  width: 716px;
+  height: 474px;
+  margin-right: 70px;
 }
 .diary iframe:last-of-type {
   display: none;
@@ -208,12 +261,12 @@ article img {
   width: 40vw;
   height: 75vh;
 
-  background-image: url("../materials/poster1.jpg");
+  background-image: url("../materials/poster1.png");
 }
 .posters .second {
   left: -45vw;
 
-  background-image: url("../materials/poster2.jpg");
+  background-image: url("../materials/poster2.png");
 }
 .web_poster iframe {
   width: 716px;
@@ -251,7 +304,7 @@ article.animate_poster iframe:last-of-type {
 footer {
   padding: 50px 100px;
 
-  background-color: #FE9000;
+  background-color: #AAFAC8;
 
   font-size: 22px;
 }
@@ -266,16 +319,21 @@ footer {
   display: flex;
 
   width: 100%;
-  margin-top: 46px;
+  /* margin-top: 46px; */
 
   justify-content: space-between;
 }
 .down p {
   width: auto;
+  margin-top: 30px;
   margin-bottom: 0;
 
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
+}
+.down img {
+  height: 50px;
+  margin-left: 30px;
 }
 
 @keyframes jumpUp {
@@ -288,3 +346,4 @@ footer {
   50%  {transform: translateX(-100px)translateY(+100px) rotate(-30deg);}
   100% {transform: translateX(0px)translateY(0px) rotate(-30deg);}
 }
+x

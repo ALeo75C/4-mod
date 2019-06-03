@@ -8,21 +8,21 @@ document.addEventListener('DOMContentLoaded', function() {
   window.onscroll = function() {
     let a = Math.floor(window.pageYOffset)
     if (a > 600) {
-      document.body.style.background = '#CBF3F0'
+      document.body.style.background = 'rgba(170, 250, 200, 0.5)'
     } else {
       document.body.style.background   = '#FFFFFF'
     }
     if (a > 1800) {
-      document.body.style.background = '#FFBF69'
+      document.body.style.background = '#C7FFED'
     }
     if (a > 2900) {
       document.body.style.background = '#FFFFFF'
     }
     if (a > 4200) {
-      document.body.style.background = '#FFBF69'
+      document.body.style.background = '#C7FFED'
     }
     if (a > 5500) {
-      document.body.style.background = '#CBF3F0'
+      document.body.style.background = 'rgba(170, 250, 200, 0.5)'
     }
     if (a > 6300) {
       document.body.style.background = '#FFFFFF'
@@ -54,7 +54,7 @@ function style() {
   for (var j = 0; j < dArray.length; j++) {
     for (let i = 0; i < 5; i++) {
       let e = document.querySelector('.div2' + j + i)
-      e.setAttribute('style', 'z-index: -5; position: absolute; background-color: ' + chengeColor() + '; border-radius: 500px; width: ' + Math.floor(Math.random() * 400 + 100) + 'px; height: ' + height() + 'px; top:' + Math.floor(Math.random() * 5 + Math.floor(Math.random() * 10)) + 'vh; left:' + Math.floor(Math.random() + Math.floor(Math.random() * 10)) + 'vw; margin: 15vh 15vw 0 0; transform: rotate(-30deg); opacity:' + Math.random() + '; animation: jump' + animate() + ' ' + Math.floor(Math.random() * 10 + 10) + 's linear infinite;')
+      e.setAttribute('style', 'z-index: -5; position: absolute; background-color: ' + chengeColor() + '; border-radius: 500px; width: ' + Math.floor(Math.random() * 400 + 100) + 'px; height: ' + height() + 'px; top:' + Math.floor(Math.random() * 5 + Math.floor(Math.random() * 10)) + 'vh; left:' + Math.floor(Math.random() + Math.floor(Math.random() * 10)) + 'vw; margin: 15vh 15vw 0 0; transform: rotate(-30deg); opacity:' + op() + '; animation: jump' + animate() + ' ' + Math.floor(Math.random() * 10 + 10) + 's linear infinite;')
     }
   }
 }
@@ -69,21 +69,25 @@ function width() {
 function height() {
   return Math.floor(Math.random() * 80 + 20)
 }
-
+function op() {
+  let o = Math.random()
+  if (o > 0.5) {
+    return 0.5
+  } else {
+    return o
+  }
+}
 function chengeColor() {
-  let c0 = '#FE9000'
-  let c1 = '#FFBF69'
-  let c2 = '#CBF3F0'
-  let c3 = '#2EC4B6'
+  let c0 = '#AAFAC8'
+  let c1 = '#C7FFED'
+  let c2 = '#BBC8CA'
   let f = Math.floor(Math.random() * 3)
   if (f === 0) {
     return c0
   } else if (f === 1) {
     return c1
-  } else if (f === 2) {
+  } else {
     return c2
-  } else if (f === 3) {
-    return c3
   }
 }
 

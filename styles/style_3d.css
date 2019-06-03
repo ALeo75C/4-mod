@@ -1,0 +1,113 @@
+@import "reset.css";
+body {
+  overflow-x: hidden;
+
+  transition: all 1s ease;
+
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 75vw;
+  margin: 0 auto 100px;
+
+  align-items: center;
+}
+h1 {
+  margin: 90px 0 50px;
+
+  font-size: 42px;
+  font-weight: 700;
+}
+h2 {
+  width: 700px;
+  margin: 45px 0 30px;
+
+  font-size: 32px;
+}
+p {
+  width: 500px;
+  margin-bottom: 35px;
+
+  font-size: 23px;
+  line-height: 1.2;
+}
+a {
+  transition: all 0.3s ease;
+  text-decoration: none;
+
+  color: black;
+}
+a:checked {
+  text-decoration: none;
+
+  color: inherit;
+}
+img {
+  width: 60vw;
+  margin-bottom: 40px;
+}
+article {
+  display: flex;
+
+  justify-content: space-around;
+}
+.picture {
+  width: 20vw;
+  height: 22vw;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.pointer .picture {
+  background-image: url('../materials/on_3d.jpg');
+
+}
+iframe {
+  width: 925px;
+  height: 575px;
+}
+iframe + iframe {
+  margin-top: 40px;
+}
+
+footer {
+  padding: 50px 100px;
+
+  background-color: #AAFAC8;
+
+  font-size: 22px;
+}
+.information p {
+  margin-top: 25px;
+  margin-bottom: 0;
+
+  font-size: 17px;
+  line-height: 0.1;
+}
+.down {
+  display: flex;
+
+  width: 100%;
+  /* margin-top: 46px; */
+
+  justify-content: space-between;
+}
+.down p {
+  width: auto;
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+.down img {
+  height: 50px;
+  margin-left: 30px;
+}
