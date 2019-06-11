@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap&subset=cyrillic');
+
+body {
+  margin: 0;
+}
+footer {
+  width: 80vw;
+  padding: 42px 10vw 30px;
+
+  background-color: #AAFAC8;
+
+  font-family: 'Source Sans Pro', sans-serif;
+}
+footer h2 {
+  margin: 0;
+
+  font-size: 24px;
+}
+.people {
+  display: flex;
+
+  width: 60vw;
+  margin: 85px auto;
+
+  justify-content: space-between;
+}
+footer h3 {
+  margin: 15px 0 0;
+}
+footer h3:nth-child(3) {
+  margin-top: 5px;
+}
+.end {
+  display: flex;
+
+  margin-top: 45px;
+
+  justify-content: space-between;
+  align-items: flex-end;
+}
+footer img:nth-child(1) {
+  width: 110px;
+}
+footer img:nth-child(2) {
+  width: 50px;
+}
+
+footer a {
+  text-decoration: underline;
+
+  color: black;
+}
+footer a:checked {
+  color: black;
+}
+
+
+@media (max-width: 500px) {
+  footer {
+    width: 66vw;
+    padding: 42px 17vw 30px;
+  }
+  footer h2 {
+    margin-bottom: 20px;
+
+    font-size: 17px;
+  }
+  .people {
+    flex-direction: column;
+
+    width: auto;
+    margin: 40px 0;
+  }
+  .curators {
+    margin-top: 32px;
+  }
+  footer h3 {
+    margin: 15px 0 0;
+
+    font-weight: 400;
+  }
+  .end {
+    flex-direction: column-reverse;
+
+    align-items: flex-start;
+  }
+  footer .info {
+    margin-top: 20px;
+  }
+}

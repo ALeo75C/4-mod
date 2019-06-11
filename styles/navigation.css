@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+}
+.head {
+  display: flex;
+
+  width: 80vw;
+  height: 80px;
+  padding: 0 10vw;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50px;
+  background-color: black;
+}
+.but {
+  display: none;
+}
+nav {
+  width: 220px;
+}
+ul {
+  display: flex;
+
+  padding: 0;
+
+  list-style: none;
+
+  justify-content: space-between;
+}
+ul li {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  cursor: pointer;
+
+  border-bottom: solid 1px white;
+
+  align-items: center;
+}
+ul li:hover {
+  border-bottom: solid 1px black;
+}
+ul ul {
+  position: absolute;
+  /* display: none; */
+
+  flex-direction: column;
+  /* margin-top: -20px; */
+
+  padding: 44px 30px 20px;
+
+  transition: all 0.5s ease;
+
+  opacity: 0;
+  background-color: white;
+}
+ul li:hover ul {
+  /* display: block; */
+  margin-top: 20px;
+
+  opacity: 1;
+}
+ul li ul li {
+  width: 155px;
+  padding: 0;
+
+  font-weight: lighter;
+}
+ul li ul li:hover {
+  font-weight: normal;
+}
+
+@media (max-width: 770px) {
+  .head {
+    width: 126px;
+    height: 126px;
+    margin: -30px 0 0 -30px;
+    padding: 0;
+
+    transition: all 0.5s ease 5ms;
+
+    border-radius: 50%;
+  }
+  .back {
+    display: block;
+
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    border-radius: 0;
+
+    align-items: flex-start;
+  }
+  .but {
+    display: flex;
+    flex-direction: column;
+
+    width: 42px;
+    height:42px;
+    margin: 30px 0 0 55px;
+
+    cursor: pointer;
+
+    justify-content: space-evenly;
+  }
+  .active {
+    align-items: center;
+    justify-content: center;
+  }
+  .line {
+    width: 42px;
+    height: 3px;
+
+    transition: all 0.5s ease;
+
+    background: black;
+  }
+  .active .line:nth-child(1) {
+    margin-top: 2px;
+
+    transform: rotate(45deg);
+  }
+  .active .line:nth-child(2) {
+    display: none;
+  }
+  .active .line:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  nav {
+    position: absolute;
+
+    display: none;
+
+    margin: 127px auto 0;
+  }
+  .back * {
+    position: static;
+
+    display: block;
+
+    opacity: 1;
+  }
+  ul li:hover {
+    border-bottom: solid 1px white;
+  }
+  ul li:hover ul {
+    margin-top: 0;
+  }
+  ul li ul li:hover {
+    font-weight: 300;
+  }
+  .back ul li:nth-child(2) {
+    display: none;
+  }
+  .back ul li ul li:nth-child(2) {
+    display: block;
+  }
+  .back ul {
+    font-size: 19px;
+  }
+  .back ul li ul {
+    margin-top: 20px;
+    padding: 0 0 42px;
+
+    transition-duration: 0s;
+
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .logo {
+    display: none;
+  }
+}

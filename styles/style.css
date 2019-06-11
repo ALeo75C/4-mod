@@ -2,3 +2,5 @@
 @import "layout.css";
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap&subset=cyrillic');
 @import "media.css";
+@import "navigation.css";
+@import "footer.css";

@@ -39,11 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
   style()
-  let bot = document.querySelector('.bot')
-  bot.onclick = function() {
-    bot.classList.toggle('hov')
-    document.querySelector('nav').classList.toggle('vue')
-  }
 })
 
 function style() {
